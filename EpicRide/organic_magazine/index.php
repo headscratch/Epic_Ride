@@ -41,8 +41,8 @@
 	        <?php if(of_get_option('display_feature_post') == '1') { ?>
 		        <?php if ( $video ) : ?>
 		        	<div class="featurevid"><?php echo $video; ?></div>
-		        <?php else: ?>					<?php if (get_the_category()=='page-portfolio-three'{  ?>						Hello Test!					<?php} ?>
-		            <div class="featureimg"><?php the_post_thumbnail('full'); ?></div>
+		        <?php else: ?>					<?php $categories = get_the_category();  ?>						<?php foreach($categories as $category): ?>							<?php if ($category->category_nicename == 'photo-of-the-day'): ?>																<?php $imgdiv = "featurephotoimg" ?>																<?php break; ?>															<?php else:?>															<?php $imgdiv = "featureimg" ?>															<?php endif; ?>						<?php endforeach; ?>						
+						<div class= <?php echo $imgdiv?>><?php the_post_thumbnail('full'); ?></div>
 		        <?php endif; ?> 
 	        <?php } else { ?>
 	        <?php } ?>
