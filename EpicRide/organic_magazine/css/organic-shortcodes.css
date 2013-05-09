@@ -29,6 +29,8 @@
 	margin: 6px 0px 6px 0px;
 	padding: 6px 0px 6px 0px;
 	}
+	
+
 
 /************************************************
 *	Toggle Box									*
@@ -220,7 +222,7 @@ p.toggle-trigger.active:before {
 	display: block;
 	background: #F4F4F4;
 	position: relative; 
-	font-size: 1em;
+	font-size: 12px;
 	font-weight: bold;
 	margin-top: -1px; 
 	padding: 6px 12px;
@@ -249,12 +251,23 @@ p.toggle-trigger.active:before {
 	content: ""; 
 	}	
 .ui-accordion .ui-accordion-content { 
-	/*height: auto !important;*/
+	/*height: auto */
+       font-size: 13px;
+       font-family: 'Open Sans', sans-serif;
+       font-weight: normal;
+       line-height: 24px;       
 	margin-top: -1px;
 	padding: 18px 24px; 
 	border: 1px solid #DDDDDD; 
-	overflow: auto; 
+	overflow: hidden !important; 
 	zoom: 1; 
+	}
+	
+.ui-accordion .ui-accordion-header .ui-icon { 
+	position: absolute; 
+	left: .5em; top: 50%; 
+	margin-top: -8px; 
+	visibility:hidden;
 	}
 
 /************************************************
