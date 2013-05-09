@@ -41,7 +41,7 @@
 	        <?php if(of_get_option('display_feature_post') == '1') { ?>
 		        <?php if ( $video ) : ?>
 		        	<div class="featurevid"><?php echo $video; ?></div>
-		        <?php else: ?>
+		        <?php else: ?>					<?php if (get_the_category()=='page-portfolio-three'{  ?>						Hello Test!					<?php} ?>
 		            <div class="featureimg"><?php the_post_thumbnail('full'); ?></div>
 		        <?php endif; ?> 
 	        <?php } else { ?>
