@@ -108,7 +108,7 @@
 		                    <?php if ( $video ) : ?>
 								<div class="featurevid"><?php echo $video; ?></div>
 		                    <?php else: ?>
-		                        <a class="featureimg" href="<?php the_permalink(); ?>" rel="bookmark"><?php the_post_thumbnail( 'post' ); ?></a>
+		                        <a class="featureimg" href="<?php the_permalink(); ?>" rel="bookmark"><?php the_post_thumbnail( 'testpost' ); ?></a>
 		                    <?php endif; ?>          
 	                        <?php the_content('read more >>'); ?>
 
@@ -154,7 +154,7 @@
 		                    <?php if ( $video ) : ?>
 								<div class="featurevid"><?php echo $video; ?></div>
 		                    <?php else: ?>
-		                        <a class="featureimg" href="<?php the_permalink(); ?>" rel="bookmark"><?php the_post_thumbnail( 'post' ); ?></a>
+		                        <a class="featureimg" href="<?php the_permalink(); ?>" rel="bookmark"><?php the_post_thumbnail( 'testpost' ); ?></a>
 		                    <?php endif; ?>
 	                    	
 	                        <h2 class="headline smaller"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>

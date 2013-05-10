@@ -689,5 +689,5 @@ add_theme_support( 'automatic-feed-links' );
 if ( function_exists('add_theme_support') )
 add_theme_support('post-thumbnails');
 add_image_size( 'slide', 784, 360, true ); // Slideshow Featured Image
-add_image_size( 'post', 784, 523, true ); // Post Featured Image
+add_image_size( 'post', 280, 185, true ); // Post Featured Imageadd_image_size( 'testpost', 280, 185, true ); // Post Featured Image
 add_image_size( 'page', 1200, 520, true ); // Featured Page Banner
